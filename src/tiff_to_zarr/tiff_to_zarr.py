@@ -17,7 +17,7 @@ from tiff_to_zarr.tiff_volume import TiffVolume
     type=click.Path(exists=True),
     help="Input tiff file location, or tiff stack directory path.",
 )
-@click.option("--dest", "-s", type=click.STRING, help="Output .zarr file path.")
+@click.option("--dest", "-d", type=click.STRING, help="Output .zarr file path.")
 @click.option(
     "--num_workers", "-w", default=100, type=click.INT, help="Number of dask workers"
 )
