@@ -32,7 +32,7 @@ from tiff_to_zarr.tiff_volume import TiffVolume
     "--zarr_chunks",
     "-zc",
     nargs=3,
-    default=(14, 128, 128),
+    default=(128, 128, 128),
     type=click.INT,
     help="Chunk size for (z, y, x) axis order. z-axis is normal to the tiff stack plane. Default (64, 128, 128)",
 )
